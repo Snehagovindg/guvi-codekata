@@ -1,7 +1,7 @@
 n, q = map(int, input().split())
-o = []
+odd = []
 for i in range(n+1, q):
     if i % 2 == 1:
-        o.append(i)
+        odd.append(i)
 
-print(*o)
+print(*odd)
