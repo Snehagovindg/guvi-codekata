@@ -7,6 +7,6 @@ o = {k for k, v in c.items() if v > 1}
 
 if o:
     for i in o:
-        print(i, end=' ')
+        print(*o)
 else:
-    print('Unique')
+    print('unique')
