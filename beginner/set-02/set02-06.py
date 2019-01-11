@@ -7,13 +7,15 @@ def is_prime(n):
     i = 5
     while i*i <= n:
         if n%i == 0 or n%(i+2) == 0:
-           return False
+            return False
         i += 6
     return True
 
 
 n, q = map(int, input().split())
-
+o = []
 for i in range(n+1, q):
     if is_prime(i):
-        print(i, end=' ')
+        o.append(i)
+
+print(*o)
