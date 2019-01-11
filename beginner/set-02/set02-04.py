@@ -1,7 +1,7 @@
 n, q = map(int, input().split())
-
+o = []
 for i in range(n+1, q):
     if i % 2 == 1:
-        print(i, end=' ')
+        o.append(i)
 
-print('\b')
+print(*o)
