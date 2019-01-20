@@ -7,5 +7,7 @@ for i in range(n):
     if nums[i] == i:
         out.append(i)
 
-out = sorted(out)
-print(*out)
+if out:
+    print(sorted(out))
+else:
+    print('-1')
