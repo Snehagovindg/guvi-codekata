@@ -8,6 +8,7 @@ for i in range(n):
         out.append(i)
 
 if out:
-    print(*sorted(out))
+    out = sorted(out)
+    print(*out)
 else:
     print('-1')
