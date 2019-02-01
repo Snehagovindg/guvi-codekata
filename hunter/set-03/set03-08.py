@@ -1,3 +1,3 @@
 in_str = input()
 
-print(''.join(list(dict.fromkeys(in_str))))
+print(''.join(sorted(list(dict.fromkeys(in_str)))))
