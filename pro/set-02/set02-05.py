@@ -10,4 +10,4 @@ for i in in_nums:
     no_of_ones.append(count)
 
 result = sorted(zip(no_of_ones, in_nums), reverse=True)
-print(*[nums for _, nums in result])
+print(*[nums for _, nums in result], sep='\n')
